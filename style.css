@@ -1,0 +1,76 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* https://colorhunt.co/palette/179483 */
+body {
+    background: rgb(130,115,151);
+background: linear-gradient(184deg, rgba(130,115,151,1) 0%, rgba(77,76,125,1) 28%, rgba(130,115,151,1) 100%), no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.90rem;
+    color: #303030;
+}
+/* Navbar */
+#page-title {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+.svg-navbar {
+    width: 12rem;
+    padding: 1%;
+}
+/* Form */
+
+#book-form, #list-wrapper {
+    width: 95%;
+    margin: 3% auto;
+    padding: 2.5%;
+    border: 1px solid #505050;
+    background-color: rgba(216, 185, 195, 0.85);
+    border-radius: 5px;
+}
+#save-button {
+    background-color: #4d4c7d;
+    color: #fff;
+    font-size: 1.15rem;
+}
+
+/* List */
+#table-wrapper {
+    overflow-x: scroll;
+}
+.table {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 5px;
+}
+.testing-p {
+    background-color: #fff;
+}
+
+/* Alerts  */
+.alert {
+    width: 75%;
+    margin: 2% auto 0;
+    padding: 0.5%;
+    text-align: center;
+    z-index: 300;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 1%;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    #page-title {
+        font-size: 1.75rem;
+    }
+}

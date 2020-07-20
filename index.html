@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Atasha's Library</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" id="page-title">Atasha's Book List</a>
+        <img src="images/undraw_book_lover_mkck.svg" class="svg-navbar">
+    </nav>
+    <main class="input-section">
+        <form id="book-form">
+            <h5>Add a book</h5>
+            <!-- Book title -->
+            <div class="input-group form-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Title</span>
+                </div>
+                <input type="text" class="form-control title-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <!-- Author info -->
+            <div class="input-group form-group">
+                <div class="input-group-prepend">
+                <span class="input-group-text">Author</span>
+                </div>
+                <input type="text" aria-label="Author" class="form-control author-input">
+            </div>
+          <!-- Select book status -->
+            <div class="input-group mt-3 form-group">
+                <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Status</label>
+                </div>
+                <select class="custom-select form-control status-input" id="inputGroupSelect01">
+                    <option value="Currently reading" selected>Currently reading</option>
+                    <option value="Done reading">Done reading</option>
+                    <option value="To-read">To-read</option>
+                    <option value="Read again later">Read again later</option>
+                </select>
+            </div>
+        <!-- Review/Notes -->
+            <div class="input-group form-group mt-3">
+                <div class="input-group-prepend">
+                <span class="input-group-text">Notes</span>
+                </div>
+                <textarea class="form-control review-input" aria-label="With textarea" maxlength="35"></textarea>
+            </div>
+        <!-- Enter button -->
+            <button type="submit" class="btn btn-md btn-block mt-3" id="save-button">Save</button>
+        </form>
+    </main>
+<!-- BOOK FORM TWO -->
+    
+
+<!-- TABLE  -->
+    <section>
+        <div id="list-wrapper">
+            <h5>My Books</h5>
+             <!-- Book List/Table -->
+            <div id="table-wrapper">
+                <table class="table table-striped mb-0"> <!--table-hover--> 
+                    <thead>
+                    <tr>
+                        <!-- <th scope="col">#</th> -->
+                        <th scope="row">Title</th>
+                        <th scope="row">Author</th>
+                        <th scope="row">Status</th>
+                        <th scope="row">Notes</th>
+                        <th scope="row"></th>
+                    </tr>
+                    </thead>
+                    <tbody id="book-list"></tbody>
+                </table>
+            </div>    
+        </div>
+    </section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
