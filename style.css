@@ -60,16 +60,7 @@ background: linear-gradient(184deg, rgba(130,115,151,1) 0%, rgba(77,76,125,1) 28
     z-index: 300;
 }
 
-@media (max-width: 600px) {
-    .navbar {
-        padding: 1%;
-        display: -webkit-flex;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
+@media (max-width: 600px) { 
     #page-title {
         font-size: 1.75rem;
     }
