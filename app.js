@@ -8,7 +8,7 @@ class Book {
     }
 }
 
- // UI class
+// UI class
 class UI {
     static displayBooks(){ //this class' method only
         const books = Store.getBooks();
@@ -45,7 +45,7 @@ class UI {
         div.appendChild(document.createTextNode(message));
         const inputSection = document.querySelector('.input-section');
         const form = document.querySelector('#book-form');
-        inputSection.insertBefore(div, form); //test
+        inputSection.insertBefore(div, form);
 
         // Remove alert after ** seconds
         setTimeout(() => document.querySelector('.alert').remove(), 2500)
@@ -92,9 +92,9 @@ class Store {
 
 // Event Listeners
     // when page loads, view book list
-document.addEventListener('DOMContentLoaded', UI.displayBooks);
+    document.addEventListener('DOMContentLoaded', UI.displayBooks);
     // Add a Book
-document.addEventListener('submit', (e) => {
+    document.addEventListener('submit', (e) => {
     // prevent default submit
     e.preventDefault();
     // Get form values
@@ -123,12 +123,11 @@ document.addEventListener('submit', (e) => {
 
         //clear fields
         UI.clearFields();
-
     } //else statement
 });
 
 
-//DELETE BOOKS
+  //DELETE BOOKS
     // Delete a Book from UI
     document.querySelector('#book-list').addEventListener('click', (e) => {
     UI.deleteBook(e.target);
@@ -139,6 +138,3 @@ document.addEventListener('submit', (e) => {
     //show alert that book is removed
     UI.showAlert('Book removed from list', 'light');
 });
-
-// Functions
-

@@ -8,15 +8,17 @@ body {
     background: rgb(130,115,151);
 background: linear-gradient(180deg, rgba(130,115,151,1) 0%, rgba(77,76,125,1) 28%, rgba(130,115,151,1) 100%), no-repeat;
     background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-size: 0.90rem;
     font-weight: 400;
-    color: #303030;
+    color: #404040;
 }
 /* Navbar */
 #page-title {
     font-size: 2.5rem;
     text-align: center;
+    font-family: Georgia, serif; 
     font-family: 'Merriweather', serif;
     font-weight: 400;
 }
@@ -39,7 +41,13 @@ background: linear-gradient(180deg, rgba(130,115,151,1) 0%, rgba(77,76,125,1) 28
     color: #fff;
     font-size: 1.15rem;
 }
+.review-input {
+    padding-top: 1.25%;
+}
 
+h5 {
+    font-weight: 600;
+}
 /* List */
 #table-wrapper {
     overflow-x: scroll;
@@ -53,6 +61,7 @@ background: linear-gradient(180deg, rgba(130,115,151,1) 0%, rgba(77,76,125,1) 28
     background-color: #fff;
 }
 
+/* SVG */
 svg {
     margin-bottom: -5px;
     overflow: hidden;
@@ -69,5 +78,8 @@ svg {
 @media (max-width: 600px) { 
     #page-title {
         font-size: 1.75rem;
+    }
+    .review-input {
+        padding-top: 2.25%;
     }
 }
